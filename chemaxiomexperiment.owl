@@ -48,13 +48,13 @@
         <rdfs:range>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dilution_product"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diluent"/>
             </owl:Restriction>
         </rdfs:range>
         <rdfs:range>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diluent"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dilution_product"/>
             </owl:Restriction>
         </rdfs:range>
         <rdfs:range>
@@ -175,14 +175,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&gfo;projection_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#adding_action"/>
+                <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Adding_Action_Right_Time_Boundary"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Adding_Action_Right_Time_Boundary"/>
+                <owl:onProperty rdf:resource="&gfo;projection_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#adding_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -337,8 +337,8 @@
         <rdfs:subClassOf rdf:resource="&gfo;Chronoid"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&gfo;projection_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diluting_action"/>
+                <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Diluting_Action_Right_Time_Boundary"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -349,8 +349,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Diluting_Action_Right_Time_Boundary"/>
+                <owl:onProperty rdf:resource="&gfo;projection_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diluting_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -364,12 +364,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Dissolving_Action_Time_Left_Time_Boundary"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Dissolving_Action_Time_Right_Time_Boundary"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -377,6 +371,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;projection_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolving_action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Dissolving_Action_Time_Left_Time_Boundary"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -448,12 +448,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Drying_Action_Left_Time_Boundary"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Drying_Action_Right_Time_Boundary"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -461,6 +455,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;projection_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#drying_action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Drying_Action_Left_Time_Boundary"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -655,6 +655,12 @@
         <rdfs:subClassOf rdf:resource="&gfo;Chronoid"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&gfo;projection_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#removing_action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Removing_Action_Left_Time_Boundary"/>
             </owl:Restriction>
@@ -663,12 +669,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Removing_Action_Right_Time_Boundary"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&gfo;projection_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#removing_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -732,12 +732,6 @@
         <rdfs:subClassOf rdf:resource="&gfo;Chronoid"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Washing_Action_Right_Time_Boundary"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;projection_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#washing_action"/>
             </owl:Restriction>
@@ -746,6 +740,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Washing_Action_Left_Time_Boundary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&gfo;has_time_boundary"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Washing_Action_Right_Time_Boundary"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -759,13 +759,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_product_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidified_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidified_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_product_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -786,6 +786,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidified_entity_role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_product_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -793,12 +799,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidifying_entity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidified_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -812,13 +812,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_process"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -832,13 +832,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_process"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -852,13 +852,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_process"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#acidification_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -908,8 +908,8 @@
         <rdfs:subClassOf rdf:resource="&gfo;Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&gfo;projects_to"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Adding_Action_Time"/>
+                <owl:onProperty rdf:resource="&sci;has_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#added_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -926,8 +926,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#added_entity_role"/>
+                <owl:onProperty rdf:resource="&gfo;projects_to"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Adding_Action_Time"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The action of combining two or more material objects.</rdfs:comment>
@@ -943,13 +943,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#addition_product_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#entity_added_to_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#entity_added_to_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#addition_product_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1062,6 +1062,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#basified_entity_role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#basifying_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1069,12 +1075,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#basification_product_role"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#basified_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1089,13 +1089,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#basification_product_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#basified_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#basified_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#basification_product_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1115,13 +1115,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#basification_process"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#basification_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#basification_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#basification_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1184,13 +1184,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#blending_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#blending_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#blending_process"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#blending_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1204,13 +1204,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#blending_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#blended_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#blended_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#blending_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1279,6 +1279,23 @@
     
 
 
+    <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#bunsen_burner -->
+
+    <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#bunsen_burner">
+        <rdfs:label xml:lang="en">Bunsen burner</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#laboratory_device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#burette -->
+
+    <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#burette">
+        <rdfs:subClassOf rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#chemical_glassware"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#calculation_action -->
 
     <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#calculation_action">
@@ -1336,13 +1353,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#changed_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#change_product_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#change_product_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#changed_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1456,12 +1473,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#charging_entity_role"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#charged_portion_of_matter_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1469,6 +1480,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#charged_entity_role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sci;has_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#charging_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The action of charging a vessel with an amount of matter.</rdfs:comment>
@@ -1588,6 +1605,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#stationary_phase_role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mobile_phase_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1595,12 +1618,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#sample_role"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#stationary_phase_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1701,12 +1718,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#coating_entity_role"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#coated_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1714,6 +1725,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#coating_equipment_role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sci;has_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#coating_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1760,13 +1777,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#concentrating_action_product_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#concentrated_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#concentrated_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#concentrating_action_product_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1889,13 +1906,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposition_agent_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposition_agent_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1909,13 +1926,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_process"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1930,6 +1947,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposition_product_role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1937,12 +1960,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposition_agent_role"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposition_product_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1956,13 +1973,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_process"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1976,13 +1993,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_process"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decomposing_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2043,12 +2060,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diffusion_interface_role"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diffusion_medium_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2056,6 +2067,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diffusing_entity_role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sci;has_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diffusion_interface_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2111,13 +2128,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diffusion_medium_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diffusing_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diffusing_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diffusion_medium_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2137,13 +2154,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diffusion_process"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diffusion_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diffusion_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diffusion_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2217,7 +2234,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dilution_product"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diluted_entity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2229,7 +2246,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#diluted_entity"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dilution_product"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <chemdomain:definition xml:lang="en">The process of decreasing the concentration of a solute in a solution through the addition of further solvent.</chemdomain:definition>
@@ -2260,13 +2277,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="&chemdomain;solvation"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolving_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolving_action"/>
+                <owl:someValuesFrom rdf:resource="&chemdomain;solvation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2280,13 +2297,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolving_action"/>
+                <owl:someValuesFrom rdf:resource="&chemdomain;solvation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="&chemdomain;solvation"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolving_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2331,13 +2348,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolution_product_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#reaction_vessel_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolving_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolved_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2349,7 +2366,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolved_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolution_product_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2361,7 +2378,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#reaction_vessel_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolving_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <chemdomain:definition xml:lang="en">The action of causing a dissolution process to occur.</chemdomain:definition>
@@ -2508,13 +2525,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurising_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurising_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurising_process"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurising_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2568,7 +2585,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;specifies"/>
-                <owl:someValuesFrom rdf:resource="&sci;timestamp"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#experiment_identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sci;specifies"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#experiment_title"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2586,19 +2609,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;specifies"/>
+                <owl:someValuesFrom rdf:resource="&sci;timestamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sci;specifies"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#experiment_plan"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;specifies"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#experiment_identifier"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;specifies"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#experiment_title"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2800,12 +2817,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#filtered_entity_role"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#filtration_product_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2813,6 +2824,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#filtration_material_role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sci;has_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#filtered_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2974,13 +2991,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#ground_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#grinding_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#grinding_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#ground_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3033,6 +3050,12 @@
         <rdfs:subClassOf rdf:resource="&gfo;Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&gfo;projects_to"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Heating_Action_Time"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#heating_equipment_role"/>
             </owl:Restriction>
@@ -3041,12 +3064,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#heated_entity_role"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&gfo;projects_to"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#Heating_Action_Time"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <chemdomain:definition xml:lang="en">The action of causing a heating process to occur.</chemdomain:definition>
@@ -3082,13 +3099,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#heating_equipment_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#heated_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#heated_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#heating_equipment_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3181,11 +3198,29 @@
     
 
 
+    <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#lid -->
+
+    <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#lid">
+        <rdfs:label xml:lang="en">lid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#laboratory_device"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#machine -->
 
     <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#machine">
         <rdfs:label xml:lang="en">Machine</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci;device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#microwave_oven -->
+
+    <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#microwave_oven">
+        <rdfs:label xml:lang="en">microwave oven</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#oven"/>
     </owl:Class>
     
 
@@ -3223,13 +3258,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mixing_product_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mixed_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mixed_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mixing_product_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3243,13 +3278,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mixing_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mixing_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mixing_process"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mixing_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3264,13 +3299,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mixed_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mixing_product_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mixing_product_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mixed_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3342,6 +3377,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mounted_product_role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mounting_equipment_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3349,12 +3390,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mounted_entity_role"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#mounted_product_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3414,13 +3449,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#neutralising_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#neutralisation_product_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#neutralisation_product_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#neutralising_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3474,13 +3509,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#neutralisation_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#neutralisation_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#neutralisation_process"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#neutralisation_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3508,12 +3543,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#opening_entity_role"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#entity_being_opened_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3521,6 +3550,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#opened_entity_role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sci;has_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#opening_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3538,6 +3573,15 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>equipment being used to open the entity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#oven -->
+
+    <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#oven">
+        <rdfs:subClassOf rdf:resource="&sci;device"/>
+        <chemdomain:synonym xml:lang="en">furnace</chemdomain:synonym>
     </owl:Class>
     
 
@@ -3656,13 +3700,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurising_process"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurising_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurising_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurising_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3676,7 +3720,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#entity_being_placed_under_pressure_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurisation_equipment_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3688,7 +3732,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurisation_equipment_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#entity_being_placed_under_pressure_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3708,13 +3752,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurising_process"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurising_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurising_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurising_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3729,13 +3773,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#entity_being_placed_under_pressure_role"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurisation_equipment_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurised_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3747,7 +3785,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurised_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#entity_being_placed_under_pressure_role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sci;has_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#pressurisation_equipment_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3801,13 +3845,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#quenched_entity"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#quenching_entity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#quenching_entity"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#quenched_entity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3851,15 +3895,24 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolving_action"/>
+                <owl:someValuesFrom rdf:resource="&chemdomain;solvation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="&chemdomain;solvation"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolving_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#reactor -->
+
+    <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#reactor">
+        <rdfs:label xml:lang="en">reactor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#laboratory_device"/>
     </owl:Class>
     
 
@@ -4000,13 +4053,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decanting_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#removal_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gfo;role_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#removal_action"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#decanting_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4162,6 +4215,15 @@
     
 
 
+    <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#scintillation_vial -->
+
+    <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#scintillation_vial">
+        <rdfs:label xml:lang="en">scintillation vial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#vial"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#screening_experiment -->
 
     <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#screening_experiment">
@@ -4213,6 +4275,23 @@
     
 
 
+    <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#stirring_device -->
+
+    <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#stirring_device">
+        <rdfs:subClassOf rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#laboratory_device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#stirring_rod -->
+
+    <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#stirring_rod">
+        <rdfs:label xml:lang="en">stirring rod</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#stirring_device"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#submerged_entity_role -->
 
     <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#submerged_entity_role">
@@ -4234,13 +4313,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#submerging_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#submerged_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#submerged_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#submerging_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4278,13 +4357,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;specifies"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#planned_chemical_reaction_description"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#synthesis_experiment_plan"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;specifies"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#synthesis_experiment_plan"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#planned_chemical_reaction_description"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4341,6 +4420,24 @@
     
 
 
+    <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#teflon_lid -->
+
+    <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#teflon_lid">
+        <rdfs:label xml:lang="en">teflon lid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#lid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#teflon_reactor -->
+
+    <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#teflon_reactor">
+        <rdfs:label xml:lang="en">teflon reactor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#reactor"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#thawing_action -->
 
     <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#thawing_action">
@@ -4359,6 +4456,15 @@
     
 
 
+    <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#transeal -->
+
+    <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#transeal">
+        <rdfs:label xml:lang="en">transeal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#lid"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#usage_action -->
 
     <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#usage_action">
@@ -4367,13 +4473,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#used_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#using_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#using_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#used_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The action of using an entity</rdfs:comment>
@@ -4405,6 +4511,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#usage_action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#vial -->
+
+    <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#vial">
+        <rdfs:subClassOf rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#chemical_glassware"/>
     </owl:Class>
     
 
@@ -4514,15 +4628,24 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#washed_entity"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#washing_agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#washing_agent"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#washed_entity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#yield -->
+
+    <owl:Class rdf:about="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#yield">
+        <rdfs:label xml:lang="en">yield</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&sci;measurement_value"/>
     </owl:Class>
     
 
@@ -4533,13 +4656,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolution_equipment_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolution_product_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#reaction_vessel_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolution_equipment_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4551,13 +4674,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolution_product_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolving_entity_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&sci;has_role"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#dissolving_entity_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/scimantica/chemaxiom/owl/chemaxiomexperiment.owl#reaction_vessel_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -4582,14 +4705,14 @@
     <rdf:Description rdf:about="&sci;observation_description">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;specifies"/>
-                <owl:someValuesFrom rdf:resource="&sci;timestamp"/>
+                <owl:onProperty rdf:resource="&sci;has_Value_Literal"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&sci;has_Value_Literal"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                <owl:onProperty rdf:resource="&sci;specifies"/>
+                <owl:someValuesFrom rdf:resource="&sci;timestamp"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
